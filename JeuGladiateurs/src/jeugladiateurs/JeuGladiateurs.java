@@ -27,6 +27,7 @@ public class JeuGladiateurs {
     Igor.afficherInfosPersonnage();
     // TODO : Afficher le message du début du combat
     affichage.afficherDebutCombat();
+    
     // </editor-fold>
 
     // **************************************************************************
