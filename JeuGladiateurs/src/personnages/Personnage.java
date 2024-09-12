@@ -129,6 +129,7 @@ public class Personnage {
         }
         System.out.println("\n"+this.nom+" attaque avec une puissance de : "+forceDeFrappe+"\n"+personnageCible.nom+" a une defense de : "+personnageCible.valeurDefense);
         System.out.println("\tLes dommages sont donc de : "+dommage);
+        
         //modifier les points de vie du personnage cible, afficher les détails
         // sur l'attaque, tel que montré dans l'énoncé.
     }
