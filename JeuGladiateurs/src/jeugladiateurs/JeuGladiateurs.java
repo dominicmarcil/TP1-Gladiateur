@@ -27,6 +27,27 @@ public class JeuGladiateurs {
     Igor.afficherInfosPersonnage();
     // TODO : Afficher le message du début du combat
     affichage.afficherDebutCombat();
+        while (Bob.pointsDeVie>0 && Igor.pointsDeVie>0){
+            tour.afficheTour();
+            for (int i = 0; i < 100; i++) {
+                if (Bob.initiative==i) {
+                    Bob.frapperPersonnage(Igor);
+                }
+                if (Igor.initiative==i) {
+                    Igor.frapperPersonnage(Bob);
+                }
+            }
+            affichage.afficherSeparateurInfosPerso();
+            Bob.afficherInfosPersonnage();
+            Igor.afficherInfosPersonnage();
+            Bob.setNewInitiativeRandom();
+            Igor.setNewInitiativeRandom();
+            tour.augmenteTour();
+            affichage.afficherSeparateurDeTour();
+        }
+        affichage.afficheVictoire(Bob, Igor);
+
+    
     
     // </editor-fold>
 
