@@ -35,13 +35,7 @@ public class JeuGladiateurs {
             for (int i = 0; i < 100; i++) {
                 if (Bob.initiative==i) {
                     Bob.frapperPersonnage(Igor);
-                    if (Igor.pointsDeVie==0) {
-                     System.out.println("\nBob décapite son adversaire!");
-                    }
-                    else{
-                        System.out.println("\nBob attaque à nouveau!");
-                        Bob.frapperPersonnage(Igor);
-                    }
+                    
                     
                 }
                 if (Igor.initiative==i) {
