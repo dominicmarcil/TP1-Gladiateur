@@ -15,6 +15,7 @@ public class Personnage {
     public int initiative;
     
     
+    
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
@@ -26,6 +27,8 @@ public class Personnage {
         this.pointsDeVie=pvs;
         this.valeurDefense=defense;
         this.valeurMaxAttaque=attaqueMax;
+       
+        
     }
     
     public Personnage() {
@@ -94,6 +97,7 @@ public class Personnage {
     public void afficherInfosPersonnage() {
         // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
         System.out.println("\n"+nom+"\n\tAttaque : "+valeurMaxAttaque+"\n\tDéfense : "+valeurDefense+"\n\tPoints de vie : "+pointsDeVie+"\n\tInitiative : "+initiative);
+        
         if (pointsDeVie<=0) {
         System.out.println("\tStatut: Mort");
         }
@@ -138,5 +142,6 @@ public class Personnage {
         // TODO : Modifier de façon aléatoire la valeur INI du personnage.
         this.initiative=(int)(Math.random()*101);
     }
+    
     // </editor-fold>
 }
