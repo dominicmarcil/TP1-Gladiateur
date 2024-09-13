@@ -9,14 +9,14 @@ public class CompteurDeTour {
     // TODO : Mettre vos attributs ici
     public int cptrTour;
     // </editor-fold>
-    
+
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
     public CompteurDeTour() {
         // TODO : Constructeur SANS paramètres qui initialise un compteur de tour (attribut) à 1
-        this.cptrTour=1;
+        this.cptrTour = 1;
     }
     // </editor-fold>
 
@@ -25,12 +25,12 @@ public class CompteurDeTour {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
     // TODO : Le getter
-    public int getCptrTour() {    
+    public int getCptrTour() {
         return cptrTour;
     }
 
     // TODO : Le setter
-    public void setCptrTour(int cptrTour) {    
+    public void setCptrTour(int cptrTour) {
         this.cptrTour = cptrTour;
     }
 
@@ -46,7 +46,7 @@ public class CompteurDeTour {
 
     public void afficheTour() {
         // TODO : Afficher le tour actuel, tel que montré dans l'énoncé
-        System.out.println("---------------\nTOUR ACTUEL: "+cptrTour+"\n---------------");
+        System.out.println("---------------\nTOUR ACTUEL: " + cptrTour + "\n---------------");
     }
     // </editor-fold>
 }
