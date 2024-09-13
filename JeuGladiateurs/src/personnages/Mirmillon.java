@@ -41,4 +41,16 @@ public void setNewInitiativeRandom() {
         
         this.initiative=(int)(Math.random()*(31));
     }
+@Override
+public void frapperPersonnage(Personnage personnageCible) {
+        super.frapperPersonnage(personnageCible);
+        if (personnageCible.pointsDeVie==0) {
+            System.out.println("\nBob décapite son adversaire!");
+           }
+        else{
+            System.out.println("\nBob attaque à nouveau!");
+            super.frapperPersonnage(personnageCible);
+        }
+        
+    }
 }
